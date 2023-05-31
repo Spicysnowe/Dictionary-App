@@ -10,13 +10,15 @@ import com.techtastic.dictionary.R;
 
 public class MeaningViewHolder extends RecyclerView.ViewHolder {
 
-    public TextView textView_partsOfSpeech;
+    public TextView textView_partsOfSpeech, textView_pos;
     public RecyclerView recycler_definations;
+
 
     public MeaningViewHolder(@NonNull View itemView) {
         super(itemView);
 
         textView_partsOfSpeech = itemView.findViewById(R.id.textView_partsOfSpeech);
         recycler_definations = itemView.findViewById(R.id.recycler_definations);
+        textView_pos = itemView.findViewById(R.id.textView_pos);
     }
 }

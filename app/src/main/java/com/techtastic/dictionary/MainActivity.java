@@ -16,7 +16,7 @@ import com.techtastic.dictionary.Models.APIResponse;
 
 public class MainActivity extends AppCompatActivity {
     SearchView search_view;
-    TextView textView_word,textView_origin;
+    TextView textView_word,textView_origin, textView_phonetic;
     RecyclerView recycler_phonetics, recycler_meanings;
     ProgressDialog progressDialog;
     PhoneticsAdapter phoneticsAdapter;
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         search_view = findViewById(R.id.search_view);
         textView_word = findViewById(R.id.textView_word);
+        textView_phonetic = findViewById(R.id.textView_phonetic);
         textView_origin = findViewById(R.id.textView_origin);
         recycler_phonetics = findViewById(R.id.recycler_phonetics);
         recycler_meanings = findViewById(R.id.recycler_meanings);
@@ -80,10 +81,12 @@ public class MainActivity extends AppCompatActivity {
     };
 
     private void showData(APIResponse apiResponse) {
-        textView_word.setText("Word: " + apiResponse.getWord());
+        textView_word.setText( apiResponse.getWord());
+
+        textView_phonetic.setText("[ " + apiResponse.getPhonetic() + " ]");
 
         recycler_phonetics.setHasFixedSize(true);
-        recycler_phonetics.setLayoutManager(new GridLayoutManager(this,1));
+        recycler_phonetics.setLayoutManager(new GridLayoutManager(this,3));
         phoneticsAdapter= new PhoneticsAdapter(this,apiResponse.getPhonetics());
         recycler_phonetics.setAdapter(phoneticsAdapter);
 

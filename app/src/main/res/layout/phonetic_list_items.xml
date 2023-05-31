@@ -3,33 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="8dp"
-    app:cardCornerRadius="8dp"
-    app:cardBackgroundColor="#798abc"
+    app:cardElevation="0dp"
     android:layout_margin="4dp">
 
     <LinearLayout
         android:layout_margin="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_audio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_volume_up_24"
+            android:background="@drawable/circular_img_button"/>
 
         <TextView
             android:id="@+id/textView_phonetic"
             android:text="ha-lo"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="18sp"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_gravity="center"
+            />
 
-        <ImageButton
-            android:id="@+id/imageButton_audio"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_baseline_volume_up_24"
-            android:background="@android:color/transparent"/>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
