@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/card.xml" value="0.1925" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/circular_img_button.xml" value="0.1925" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/ic_baseline_volume_up_24.xml" value="0.1925" />
+        <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/ic_copy.xml" value="0.1925" />
+        <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/splash_blob_bottom.xml" value="0.1925" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/view_bg.xml" value="0.2" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/view_bg_2.xml" value="0.1925" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/drawable/view_bg_3.xml" value="0.1925" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/layout/activity_splash.xml" value="0.17239583333333333" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/layout/definations_list_items.xml" value="0.25" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/layout/meanings_list_items.xml" value="0.33" />
         <entry key="..\:/Internship Assignments 2023/assignment/Dictionary/app/src/main/res/layout/phonetic_list_items.xml" value="0.18645833333333334" />
