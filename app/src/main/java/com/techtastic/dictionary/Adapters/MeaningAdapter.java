@@ -2,7 +2,9 @@ package com.techtastic.dictionary.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -32,15 +34,18 @@ public class MeaningAdapter extends RecyclerView.Adapter<MeaningViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MeaningViewHolder holder, int position) {
-        holder.textView_partsOfSpeech.setText("Parts of Speech" + meaningsList.get(position).getPartOfSpeech());
-
-        holder.textView_pos.setText("Parts of Speech" + meaningsList.get(position).getPartOfSpeech());
+        holder.textView_partsOfSpeech.setText("Parts of Speech " + meaningsList.get(position).getPartOfSpeech());
+        // textView_pos is duplicate of textView_partsOfSpeech done for ui purpose
+        holder.textView_pos.setText("Parts of Speech " + meaningsList.get(position).getPartOfSpeech());
 
         holder.recycler_definations.setHasFixedSize(true);
         holder.recycler_definations.setLayoutManager(new GridLayoutManager(context,1));
 
         DefinitionAdapter definitionAdapter = new DefinitionAdapter(context, meaningsList.get(position).getDefinitions());
         holder.recycler_definations.setAdapter(definitionAdapter);
+
+
+
 
     }
 
