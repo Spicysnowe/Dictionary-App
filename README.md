@@ -17,7 +17,7 @@ Welcome to the Dictionary App! This application allows users to search for word 
 <p align="left">
   <img src="Dictionary App mockup.gif" alt="app mockup" width="594" height="420">
 </p>
-
-
+<br>
+If you liked it, don't forget to give a star.<br>
 Happy Coding!
 
